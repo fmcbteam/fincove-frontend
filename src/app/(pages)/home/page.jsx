@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import FieldInput from '../../../components/atoms/passwordField'
 
 const Home = () => {
     return (
@@ -9,7 +8,6 @@ const Home = () => {
                 <p>This is the FinCove Home Page</p>
                 <h3 className='font-semibold pt-2'>Go back</h3>
             </Link>
-            <FieldInput />
         </div>
     )
 }
