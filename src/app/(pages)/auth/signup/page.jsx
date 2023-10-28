@@ -6,6 +6,8 @@ import Link from "next/link";
 import '../../../../../src/style.css';
 import Password from "../../../../components/atoms/passwordField";
 import Emails from "../../../../components/atoms/emailsField";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { Diversity1 } from "@mui/icons-material";
 
 
 const SignUp = () => {
@@ -70,9 +72,9 @@ const SignUp = () => {
               <div>Or</div>
               <div className="md:w-[100%] w-[100%] bg-darkgray h-[1px]"></div>
             </div>
-            {/* <button className="py-2 px-4 w-[100%] rounded-md bg-primary text-white">
-              Connect Wallet
-            </button> */}
+            <div className="w-[100%] flex justify-center items-center">
+            <ConnectButton />
+            </div>
             <div className="flex justify-center items-center gap-2">
               <input type="checkbox" className="bg-primary" />
               <p className="text-[14px] py-4">
