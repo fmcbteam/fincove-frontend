@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 // import { MdEye, MdEyeOff } from 'react-icons/md';
@@ -35,7 +36,7 @@ const handleTogglePasswordVisibility = () => {
   return (
     <div className="text-field-container relative pt-2 w-[100%]">
         {type === 'password' && (
-        <img
+        <Image
           src={passwordVisible ? MdEyeOff : MdEye}
           alt="Toggle password visibility"
           className="eye-icon absolute right-5 top-3 cursor-pointer"
