@@ -7,8 +7,12 @@ import '../../../../../src/style.css';
 import Password from "../../../../components/atoms/passwordField";
 import Emails from "../../../../components/atoms/emailsField";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
-import { Diversity1 } from "@mui/icons-material";
+import styled from "styled-components";
 
+const StyledConnectButton = styled(ConnectButton)`
+  width: 100%;
+  background-color: #A7368D;
+`;
 
 const SignUp = () => {
   return (
@@ -73,7 +77,7 @@ const SignUp = () => {
               <div className="md:w-[100%] w-[100%] bg-darkgray h-[1px]"></div>
             </div>
             <div className="w-[100%] flex justify-center items-center">
-            <ConnectButton />
+            <StyledConnectButton label={'SignUp with Wallet Address'} className="bg-primary text-semibol" />
             </div>
             <div className="flex justify-center items-center gap-2">
               <input type="checkbox" className="bg-primary" />
