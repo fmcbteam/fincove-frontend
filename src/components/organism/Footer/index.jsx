@@ -16,7 +16,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="w-[100%] bg-white px-4 pt-10 shadow-md">
+    <div className="w-[100%] bg-white px-4 pt-10 shadow-md h-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-around items-center px-8 gap-10">
         <div className="flex flex-col justify-start">
           <Image

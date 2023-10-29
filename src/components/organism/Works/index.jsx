@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const Works = () => {
   return (
-    <div className="w-[100%] bg-white px-4 py-10 text-center flex-col flex justify-center items-center">
+    <div className="w-[100%] bg-white px-4 py-10 text-center flex-col flex justify-center items-center h-auto">
       <h1 className="text-[#5B2682] font-semibold text-[2.5em] px-4">
         How Fincove works
       </h1>

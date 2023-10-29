@@ -47,7 +47,7 @@ const Finance = () => {
   ];
 
   return (
-    <div className="w-[100%] px-4 py-10 text-center flex-col flex justify-center items-center bg-white">
+    <div className="w-[100%] px-4 py-10 text-center flex-col flex justify-center items-center bg-white h-auto">
         <h1 className="self-start items-start text-[#5B2682] font-semibold text-[2.5em] px-4">Why Fincove is for you?</h1>
       <div className="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-center items-center">
         {array.map((list, index) => (
