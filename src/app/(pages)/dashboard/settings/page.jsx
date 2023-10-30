@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Home, AdminPanelSettings, People, ModelTraining, Analytics } from "@mui/icons-material";
+import { SecurityIcon, PeopleIcon, NotificationsIcon, Error, TuneIcon } from "@mui/icons-material";
 import { usePathname } from "next/navigation";
 // import "../../../src/style.css";
 import Link from "next/link";
@@ -18,22 +18,27 @@ const Settings =() => {
     const settingsList = [
         {
             title: "General Information",
-            icon: <Home />,
+            icon: <Error />,
             path: "/notFound",
         },
         {
             title: "Notification",
-            icon: <People />,
+            icon: <NotificationsIcon />,
             path: "/notFound",
         },
         {
             title: "Security",
-            icon: <AdminPanelSettings />,
+            icon: <SecurityIcon />,
             path: "/notFound",
         },
         {
             title: "Account Manager",
-            icon: <Analytics />,
+            icon: <PeopleIcon />,
+            path: "/notFound",
+        },
+        {
+            title: "Preference",
+            icon: <TuneIcon />,
             path: "/notFound",
         }
     ];
