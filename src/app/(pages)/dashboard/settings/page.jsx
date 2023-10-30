@@ -56,9 +56,7 @@ const Settings =() => {
                     <li key={i} className={`${pathname == item.path ? 'bg-[#4d94ff14]  border-l-[5px] border-primary border' : ''} rounded-lg  flex w-[100%] justify-start items-center hover:bg-light`}>
                     <span className="py-2 ml-2 text-[25px] text-primary">{item.icon}</span>
                         <Link
-                            className={`text-gray-800 px-2 text-[15px] rounded  w-[80%] self-center ${
-                            hovered ? "scale-100 ml-[5px] cursor-pointer" : "scale-0"
-                            } duration-100`}
+                            className={`text-black px-2 text-[20px] rounded  w-[80%] self-center duration-100`}
                             href={item.path}
                         >
                             {item.title}

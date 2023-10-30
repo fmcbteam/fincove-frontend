@@ -17,7 +17,7 @@ const Profile =() => {
             <div className="w-full items-center mt-5 mb-5">
 
                 {/* Full name */}
-                <div className="flex-1 md:flex mt-4 flex-row justify-evenly items-center">
+                <div className="flex-1 md:flex mt-4 flex-row justify-evenly items-center gap-5">
                     <div className="pt-4 w-[100%] flex flex-col">
                         <label htmlFor="email" className="text-primary text-[14px]">
                             First Name <i className="text-red">*</i>
@@ -45,7 +45,7 @@ const Profile =() => {
                 </div>
 
                 {/* Pone/email */}
-                <div className="flex-1 md:flex mt-4 flex-row justify-evenly items-center">
+                <div className="flex-1 md:flex mt-4 flex-row justify-evenly items-center gap-5">
                     <div className="pt-4 w-[100%] flex flex-col">
                         <label htmlFor="email" className="text-primary text-[14px]">
                             Email <i className="text-red">*</i>
@@ -73,7 +73,7 @@ const Profile =() => {
                 </div>
 
                 {/* Gender/Id */}
-                <div className="flex-1 md:flex mt-4 flex-row justify-evenly items-center">
+                <div className="flex-1 md:flex mt-4 flex-row justify-evenly items-center gap-5">
                     <div className="pt-4 w-[100%] flex flex-col">
                         <label htmlFor="email" className="text-primary text-[14px]">
                             Gender <i className="text-red">*</i>

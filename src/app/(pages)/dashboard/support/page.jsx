@@ -11,8 +11,8 @@ const Support =() => {
     ];
 
     return (
-        <div className="w-full flex-grow lg:px-[15%] px-4 py-4 bg-background">
-            <div className="py-4 w-full items-center justify-center w-full">
+        <div className="w-full flex-grow lg:px-[15%] px-4 py-4 bg-background gap-5">
+            <div className="py-4 w-full items-center justify-center">
                 <h2 className="text-gray-800 text-2xl w-full text-center">
                     Hello, What can we help you with?
                 </h2>
@@ -36,7 +36,7 @@ const Support =() => {
                     </h2>
 
                     {/* flow */}
-                    <div className='flex flex-col md:flex-row items-center justify-center mt-5'>
+                    <div className='flex flex-col md:flex-row items-center justify-center mt-5 gap-5'>
                         {listings && listings.map((listing, i) => (
                             <div className="rounded-lg flex flex-col text-center bg-white p-5 item-center justify-center shadow border border-gray-300" key={i}>
                                 <span className="py-2 ml-2 text-[25px] text-primary">{listing.icon}</span>

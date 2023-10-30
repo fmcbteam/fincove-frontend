@@ -10,7 +10,7 @@ export default function DashboardLayout({ children }) {
           <div className="hidden md:block">
             <Sidebar />
           </div>
-          <div className="w-[100%] mt-[20%] md:mt-0 max-h-[80%]"> 
+          <div className="w-[100%] mt-[20%] md:mt-0 max-h-[80%] overflow-y-auto"> 
             {/* Set a max height and overflow-y: auto to enable scrolling */}
             {children}
           </div>
