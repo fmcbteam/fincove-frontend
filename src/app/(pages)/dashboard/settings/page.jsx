@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { SecurityIcon, PeopleIcon, NotificationsIcon, Error, TuneIcon } from "@mui/icons-material";
+import { Security, People, Notifications, Error, Tune } from "@mui/icons-material";
 import { usePathname } from "next/navigation";
 // import "../../../src/style.css";
 import Link from "next/link";
@@ -23,22 +23,22 @@ const Settings =() => {
         },
         {
             title: "Notification",
-            icon: <NotificationsIcon />,
+            icon: <Notifications />,
             path: "/notFound",
         },
         {
             title: "Security",
-            icon: <SecurityIcon />,
+            icon: <Security />,
             path: "/notFound",
         },
         {
             title: "Account Manager",
-            icon: <PeopleIcon />,
+            icon: <People />,
             path: "/notFound",
         },
         {
             title: "Preference",
-            icon: <TuneIcon />,
+            icon: <Tune />,
             path: "/notFound",
         }
     ];
@@ -52,19 +52,19 @@ const Settings =() => {
                 hovered ? "mt-[40px]" : "mt-[40px]"
             } flex flex-col justify-start align-start items-start gap-[10px]`}
             >
-            {settingsList.map((item, i) => (
-                <li key={i} className={`${pathname == item.path ? 'bg-[#4d94ff14]  border-l-[5px] border-primary border' : ''} rounded-lg  flex w-[100%] justify-start items-center hover:bg-light`}>
-                <span className="py-2 ml-2 text-[25px] text-primary">{item.icon}</span>
-                    <Link
-                        className={`text-gray-800 px-2 text-[15px] rounded  w-[80%] self-center ${
-                        hovered ? "scale-100 ml-[5px] cursor-pointer" : "scale-0"
-                        } duration-100`}
-                        href={item.path}
-                    >
-                        {item.title}
-                    </Link>
-                </li>
-            ))}
+                {settingsList && settingsList.map((item, i) => (
+                    <li key={i} className={`${pathname == item.path ? 'bg-[#4d94ff14]  border-l-[5px] border-primary border' : ''} rounded-lg  flex w-[100%] justify-start items-center hover:bg-light`}>
+                    <span className="py-2 ml-2 text-[25px] text-primary">{item.icon}</span>
+                        <Link
+                            className={`text-gray-800 px-2 text-[15px] rounded  w-[80%] self-center ${
+                            hovered ? "scale-100 ml-[5px] cursor-pointer" : "scale-0"
+                            } duration-100`}
+                            href={item.path}
+                        >
+                            {item.title}
+                        </Link>
+                    </li>
+                ))}
             </ul>
             </div>
         </div>

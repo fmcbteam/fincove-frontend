@@ -1,13 +1,13 @@
 import React from "react";
-import {ReportIcon, FeedbackIcon, HelpIcon, PersonIcon} from "@mui/icons-material"
+import {Report, Feedback, Help, Person} from "@mui/icons-material"
 
 const Support =() => {
 
-    const Listings = [
-        {title: "Your Account", content: "Account Setting Verifications.", icon: <PersonIcon />},
-        {title: "Dispute", content: "Dispute unauthorized transactions.", icon: <ReportIcon />},
-        {title: "Help", content: "Get help from our Professionals", icon: <HelpIcon />},
-        {title: "Feedback", content: "Let us know how we can serve you better", icon: <FeedbackIcon />},
+    const listings = [
+        {title: "Your Account", content: "Account Setting Verifications.", icon: <Person />},
+        {title: "Dispute", content: "Dispute unauthorized transactions.", icon: <Report />},
+        {title: "Help", content: "Get help from our Professionals", icon: <Help />},
+        {title: "Feedback", content: "Let us know how we can serve you better", icon: <Feedback />},
     ];
 
     return (
@@ -37,8 +37,8 @@ const Support =() => {
 
                     {/* flow */}
                     <div className='flex flex-col md:flex-row items-center justify-center mt-5'>
-                        {Listings && Listings.map((listing, i) => (
-                            <div className="rounded-lg shadow border border-gray-300" key={i}>
+                        {listings && listings.map((listing, i) => (
+                            <div className="rounded-lg flex flex-col text-center bg-white p-5 item-center justify-center shadow border border-gray-300" key={i}>
                                 <span className="py-2 ml-2 text-[25px] text-primary">{listing.icon}</span>
                                 <h3 className="mt-2 text-gray-800 text-lg">{listing.title}</h3>
                                 <p className="mt-2 text-gray-600 ">{listing.content}</p>
