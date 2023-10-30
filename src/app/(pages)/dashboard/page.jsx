@@ -5,7 +5,7 @@ const Home = () => {
 
 
   return (
-    <div className="w-[100%] px-[15%] py-4">
+    <div className="w-[100%] lg:px-[15%] px-4 py-4 bg-background">
       <Diagram />
     </div>
   );

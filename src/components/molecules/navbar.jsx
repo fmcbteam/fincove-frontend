@@ -35,35 +35,35 @@ const Navbar = () => {
         <div className={`${show ? 'block' : "hidden lg:flex"} flex gap-10 justify-center md:justify-between items-center w-[65%] responsive`}>
           <ul className="flex lg:space-x-[30px] flex-col lg:flex-row text-center self-center">
             <Link
-              href="/about"
+              href="/notFound"
               className={`font-medium links text-gray-500 hover:text-black ${
-                isActive("/about") ? "text-black" : ""
+                isActive("/notFound") ? "text-black" : ""
               }`}
             >
               Features
             </Link>
 
             <Link
-              href="/services"
+              href="/notFound"
               className={`font-medium links text-gray-500 hover:text-black ${
-                isActive("/services") ? "text-black" : ""
+                isActive("/notFound") ? "text-black" : ""
               }`}
             >
               Trading
             </Link>
 
             <Link
-              href="/contact"
+              href="/notFound"
               className={`font-medium links text-gray-500 hover:text-black ${
-                isActive("/contact") ? "text-black" : ""
+                isActive("/notFound") ? "text-black" : ""
               }`}
             >
               About
             </Link>
             <Link
-              href="/contact"
+              href="/notFound"
               className={`font-medium links text-gray-500 hover:text-black ${
-                isActive("/contact") ? "text-black" : ""
+                isActive("/notFound") ? "text-black" : ""
               }`}
             >
               FAQ

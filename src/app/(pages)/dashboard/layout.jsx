@@ -10,7 +10,7 @@ export default function DashboardLayout({ children }) {
       <div className="w-[100%] overflow-y-auto">
         <div className="flex flex-col w-[100%] top-0 left-0 bg-white z-[10] sticky">
           <Dashnav />
-          <div className="p-4 w-[100%] mt-[20%] md:mt-0">{children}</div>
+          <div className="w-[100%] mt-[20%] md:mt-0">{children}</div>
         </div>
       </div>
     </div>

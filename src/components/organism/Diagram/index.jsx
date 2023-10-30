@@ -1,55 +1,64 @@
+'use client'
 import React from "react";
+import { useRouter } from "next/navigation";
 import Lend from "../../../../public/Image/lend.png";
 import Coin from "../../../../public/Image/coin.png";
 import Report from "../../../../public/Image/report.png";
 import Invest from "../../../../public/Image/invest.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const Diagram = () => {
   const array = [
     {
       src: Coin,
-      text: "Easy to create wallet",
-      paragraph: "Fincove enable users to create a secure instant wallet",
+      text: "Asset coin",
+      paragraph: "Get to know the market",
+      link: '/notFound'
     },
     {
       src: Lend,
-      text: "Send & Receive anytime",
+      text: "P2P Lending",
       paragraph:
-        "With Fincove sending and receiving of crypto and fiat currency as been made easy",
+        "Get access to our quick loan",
+      link: '/notFound'
     },
     {
       src: Report,
       text: "Reports & analytics",
       paragraph:
-        "Fincove let you have full insight of your financial projection",
+        "Check how far you’ve trade",
+      link: '/notFound'
     },
     {
       src: Invest,
-      text: "Get Refund on your lending",
-      paragraph: "Repayment made easy on our P2P lending structure",
+      text: "Invest",
+      paragraph: "Stock Investment",
+      link: '/notFound'
     },
   ];
 
   return (
     <div>
-      <div className="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 justify-center items-center w-[100%]">
+      <div className="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 justify-start items-center w-[100%] bg-background">
         {array.map((list, index) => (
           <div
             key={index}
-            className="p-4 rounded-md bg-[#FFB3ED] h-[200px] flex flex-col justify-center items-center"
+            className="p-4 rounded-md bg-[#fff] h-[200px] flex flex-row justify-center items-center shadow-md gap-3"
           >
             <Image
               src={list.src}
               alt="earth.png"
               width={700}
               height={300}
-              className="w-[60px] h-[60px] p-4 bg-primary rounded-full"
+              className="w-[60px] h-[60px] rounded-full"
             />
-            <h2 className="py-4 font-semibold text-[20px] text-center">
-              {list.text}
-            </h2>
-            <p className="text-[15px] text-center">{list.paragraph}</p>
+            <Link href={list.link} className="flex flex-col justify-start items-start">
+              <h2 className="py-2 font-semibold text-[18px] text-start"> 
+                {list.text}
+              </h2>
+              <p className="text-[15px] text-start">{list.paragraph}</p>
+            </Link>
           </div>
         ))}
       </div>

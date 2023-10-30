@@ -55,6 +55,7 @@ const wagmiConfig = createConfig({
   publicClient,
 });
 
+
 const Providers = ({ children }) => {
   return(
     <WagmiConfig config={wagmiConfig}>
