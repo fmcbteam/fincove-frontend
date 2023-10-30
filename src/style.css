@@ -24,33 +24,58 @@
 } */
 
 .signin{
-  background: linear-gradient(#BF894F, #8703B6);
+  background: linear-gradient(#F6C32E, #421638);
 }
 .signup:hover{
-  background: linear-gradient(#BF894F, #8703B6);
+  background: linear-gradient(#F6C32E, #421638);
 }
 
 .signup{
-  background: linear-gradient( #8703B6, #BF894F);
+  background: linear-gradient( #421638, #F6C32E);
 }
 .signin:hover{
-  background: linear-gradient( #8703B6, #BF894F);
+  background: linear-gradient( #421638, #F6C32E);
 }
 
 .links{
-  color: #8703B6;
+  color: #421638;
   text-align: start;
   align-self: flex-start;
   margin: 0;
 }
 .links:hover{
-  color: #BF894F;
+  color: #F6C32E;
 }
 
 .background {
-  background-color: #fff;
+  background-color: #421638;
   border-right: 2px solid #ececec;
 }
+
+@media screen and (max-width: 576px) {
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .table th,
+  .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    text-align: left;
+  }
+
+  .table th {
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    background-color: #f5f8fa;
+  }
+
+  .table td {
+    border: 1px solid #dee2e6;
+  }
+}
+
 
 
 @media (max-width: 768px) {

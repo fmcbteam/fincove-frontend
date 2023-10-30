@@ -53,24 +53,8 @@ const SignUp = () => {
 
   return (
     <div>
-      <div className="flex flex-col md:flex-row w-[100%] justify-center items-center p-4 lg:py-10 lg:px-40 bg-background gap-10">
-        <div className="bg-primary p-8 rounded-[20px] md:w-[40%] h-[120vh] flex-1 hidden md:flex justify-center items-center">
-          <div className="self-center">
-            <h2 className="text-white text-center text-[3em] font-semibold py-2">
-              Join Us Today.
-            </h2>
-            <h4 className="text-white text-center text-[20px] py-2">
-              Please, create an Account.
-            </h4>
-            <p className="text-white text-center text-[14px] pt-2">
-              Enjoy unlimited Evolution with Fincove
-            </p>
-            <p className="text-white text-center text-[15px]">
-              Unlimited P2P transactions
-            </p>
-          </div>
-        </div>
-        <div className="bg-white rounded-[20px] h-[100%] p-8 md:w-[40%] flex flex-col justify-start items-start">
+      <div className="flex w-[100%] justify-center items-center p-4 lg:py-10 lg:px-40 bg-white gap-10">
+        <div className="bg-background rounded-[20px] h-[100%] p-8 md:w-[40%] flex flex-col justify-start items-start">
           <Image
             src={Logo}
             alt="logo.png"

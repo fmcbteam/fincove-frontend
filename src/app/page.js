@@ -7,7 +7,7 @@ import Footer from '../components/organism/Footer/index';
 
 export default function Home() {
   return (
-    <div className="bg-background">
+    <div className="bg-white">
       <Navbar />
       <Introduction />
       <Finance />

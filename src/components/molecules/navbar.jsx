@@ -32,26 +32,9 @@ const Navbar = () => {
             className="w-[120px] h-[50px]"
           />
         </Link>
-        <div className={`${show ? 'block' : "hidden lg:flex"} flex gap-10 justify-center md:justify-between items-center w-[65%] responsive`}>
+        <div className={`${show ? 'block' : "hidden lg:flex"} flex gap-10 justify-center md:justify-between items-center w-[60%] responsive`}>
           <ul className="flex lg:space-x-[30px] flex-col lg:flex-row text-center self-center">
-            <Link
-              href="/notFound"
-              className={`font-medium links text-gray-500 hover:text-black ${
-                isActive("/notFound") ? "text-black" : ""
-              }`}
-            >
-              Features
-            </Link>
-
-            <Link
-              href="/notFound"
-              className={`font-medium links text-gray-500 hover:text-black ${
-                isActive("/notFound") ? "text-black" : ""
-              }`}
-            >
-              Trading
-            </Link>
-
+           
             <Link
               href="/notFound"
               className={`font-medium links text-gray-500 hover:text-black ${

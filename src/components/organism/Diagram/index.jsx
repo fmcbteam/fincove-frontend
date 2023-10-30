@@ -21,13 +21,13 @@ const Diagram = () => {
       text: "P2P Lending",
       paragraph:
         "Get access to our quick loan",
-      link: '/notFound'
+      link: '/lending'
     },
     {
       src: Report,
       text: "Reports & analytics",
       paragraph:
-        "Check how far you’ve trade",
+        "Check how far you have trade",
       link: '/notFound'
     },
     {

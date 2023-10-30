@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from "react";
-import { Home, AdminPanelSettings, People, ModelTraining, Analytics, Settings } from "@mui/icons-material";
+import { Home, AdminPanelSettings, People, ModelTraining, Analytics, Settings, Money } from "@mui/icons-material";
 import Image from "next/image";
-import Logo from '../../../public/Image/logo.png'
 import "../../../src/style.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Toolbar } from "@mui/material";
 
 
 const Sidebar = () => {
@@ -31,8 +31,18 @@ const Sidebar = () => {
         path: "/notFound",
       },
       {
-        title: "Finance",
+        title: "Account",
         icon: <AdminPanelSettings />,
+        path: "/notFound",
+      },
+      {
+        title: "P2P Loan",
+        icon: <Money />,
+        path: "/notFound",
+      },
+      {
+        title: "Intelligence",
+        icon: <ModelTraining />,
         path: "/notFound",
       },
       {
@@ -57,32 +67,16 @@ const Sidebar = () => {
         onMouseEnter={handleHover}
         onMouseLeave={handleMouseLeave}
       >
-        <span className="flex flex-row justify-start align-start">
-         
-          <span
-            className={`flex justify-start items-end text-center uppercase text-black font-semibold text-[1.2em] pl-2 ${
-              hovered ? "scale-100" : "scale-0"
-            } duration-100`}
-          >
-            <Image
-            src={Logo}
-            alt="logo.png"
-            width={300}
-            height={200}
-            className="w-[120px] block float-left h-[80px]"
-          />
-          </span>
-        </span>
         <ul
           className={`${
-            hovered ? "mt-[40px]" : "mt-[40px]"
+            hovered ? "mt-[20px]" : "mt-[20px]"
           } flex flex-col justify-start align-start items-start gap-[10px]`}
         >
           {SideList.map((item, i) => (
             <li key={i} className={`${pathname == item.path ? 'bg-[#4d94ff14]  border-l-[5px] border-primary border' : ''} rounded-lg  flex w-[100%] justify-start items-center hover:bg-light`}>
-              <span className="py-2 ml-2 text-[25px] text-primary">{item.icon}</span>
+              <span className="py-2 ml-2 text-[25px] text-white">{item.icon}</span>
               <Link
-                className={`px-2 text-[15px] rounded  w-[80%] self-center ${
+                className={`px-2 text-[15px] text-white rounded  w-[80%] self-center ${
                   hovered ? "scale-100 ml-[5px] cursor-pointer" : "scale-0"
                 } duration-100`}
                 href={item.path}
