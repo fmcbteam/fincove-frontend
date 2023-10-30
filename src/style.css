@@ -47,6 +47,11 @@
   color: #BF894F;
 }
 
+.background {
+  background-color: #fff;
+  border-right: 2px solid #ececec;
+}
+
 
 @media (max-width: 768px) {
   .responsive{
