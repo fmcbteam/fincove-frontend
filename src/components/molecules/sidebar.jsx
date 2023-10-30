@@ -28,12 +28,12 @@ const Sidebar = () => {
       {
         title: "Profile",
         icon: <People />,
-        path: "/notFound",
+        path: "/dashboard/profile",
       },
       {
         title: "Account",
         icon: <AdminPanelSettings />,
-        path: "/notFound",
+        path: "/dashboard/finance",
       },
       {
         title: "P2P Loan",
@@ -48,12 +48,12 @@ const Sidebar = () => {
       {
         title: "Setting",
         icon: <Settings />,
-        path: "/notFound",
+        path: "/dashboard/settings",
       },
       {
         title: "Support",
         icon: <Analytics />,
-        path: "/notFound",
+        path: "/dashboard/support",
       }
   ];
   const pathname = usePathname();
