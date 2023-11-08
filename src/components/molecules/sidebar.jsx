@@ -26,32 +26,27 @@ const Sidebar = () => {
         path: "/dashboard",
       },
       {
-        title: "Profile",
-        icon: <People />,
+        title: "Account",
+        icon: <AdminPanelSettings />,
         path: "/dashboard/profile",
       },
       {
-        title: "Account",
-        icon: <AdminPanelSettings />,
+        title: "Finance Intelligence",
+        icon: <ModelTraining />,
         path: "/dashboard/finance",
       },
       {
-        title: "P2P Loan",
+        title: "P2P Loans",
         icon: <Money />,
-        path: "/notFound",
+        path: "/dashboard/loans",
       },
       {
-        title: "Intelligence",
-        icon: <ModelTraining />,
-        path: "/notFound",
-      },
-      {
-        title: "Setting",
+        title: "Settings",
         icon: <Settings />,
         path: "/dashboard/settings",
       },
       {
-        title: "Support",
+        title: "Supports",
         icon: <Analytics />,
         path: "/dashboard/support",
       }
@@ -59,10 +54,10 @@ const Sidebar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="relative w-[100%] hidden lg:block">
+    <div className="w-[100%] lg:block lg:relative fixed top-0">
       <section
         className={`background h-screen duration-300 ${
-          hovered ? "w-60" : "w-[70px]"
+          hovered ? "w-60 scale-100" : "w-[70px]"
         } p-3 pt-[25px]`}
         onMouseEnter={handleHover}
         onMouseLeave={handleMouseLeave}

@@ -7,6 +7,7 @@ import Image from "next/image";
 import Profile from "../../../public/Image/profile.png";
 import { MdMessage, MdNotifications, MdMenu } from "react-icons/md";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import Link from "next/link";
 
 import styled from "styled-components";
 
@@ -42,7 +43,15 @@ const Dashnav = () => {
             show ? "block" : "hidden lg:flex"
           } flex gap-10 justify-center md:justify-between items-center responsive`}
         >
-          <div className="flex justify-center items-center flex-row gap-5 responsive">
+          <div className="flex justify-center items-start lg:items-center flex-row gap-5 responsive">
+            <ul className="flex flex-col justif-center items-start lg:items-center gap-5 lg:hidden">
+              <li> <Link href='/dashboard'>Home</Link> </li>
+              <li> <Link href='/dashboard/profile'>Account</Link> </li>
+              <li> <Link href='/dashboard/finance'>Finance Intelligence</Link> </li>
+              <li> <Link href='/dashboard/loans'>P2P Loans</Link> </li>
+              <li> <Link href='/dashboard/settings'>Settings</Link> </li>
+              <li> <Link href='/dashboard/support'>Supprts</Link> </li>
+            </ul>
             <StyledConnectButton />
             <MdNotifications size={30} className="text-primary" />
             <MdMessage size={30} className="text-primary" />
