@@ -28,22 +28,22 @@ const Sidebarp2p = () => {
       {
         title: "Loan Request",
         icon: <Money />,
-        path: "/lending/request",
+        path: "/lendings/request",
       },
       {
         title: "Loan Offer",
         icon: <CreditScore />,
-        path: "/lending/offer",
+        path: "/lendings/offer",
       },
       {
         title: "Transfer",
         icon: <TransferWithinAStation />,
-        path: "/lending/transfer",
+        path: "/lendings/transfer",
       },
       {
         title: "Eligibility status",
         icon: <SignalWifiStatusbarConnectedNoInternet4Sharp />,
-        path: "/lending/status",
+        path: "/lendings/status",
       },
   ];
   const pathname = usePathname();
