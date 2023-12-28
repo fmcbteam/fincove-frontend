@@ -1,13 +1,14 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
-import Lend from "../../../../public/Image/give.png";
-import Download from "../../../../public/Image/download.png";
-import Wallet from "../../../../public/Image/wallet2.png";
-import Ads from "../../../../public/Image/ads.png";
+import Lend from "../../../../../public/Image/give.png";
+import Download from "../../../../../public/Image/download.png";
+import Wallet from "../../../../../public/Image/wallet2.png";
+import Ads from "../../../../../public/Image/ads.png";
 import Image from "next/image";
 import Link from "next/link";
-import { MdArrowForward, MdArrowUpward } from "react-icons/md";
+import { MdArrowForward, MdArrowUpward, MdFileCopy } from "react-icons/md";
+import "../../../../style.css";
 
 const Diagram = () => {
   const array = [
@@ -65,16 +66,45 @@ const Diagram = () => {
   ];
 
   return (
-    <div>
-      <div>
-        <Link
-          href={"/dashboard/kyc"}
-          className="text-white text-[18px] py-2 px-4 bg-primary text-center flex justify-center items-center"
-        >
-          Get Access to loans when you complete your KYC Registration{" "}
-          <MdArrowForward className="text-white" size={30} />{" "}
-        </Link>
-        <div className="w-[100%] grid grid-cols-1 md:grid-cols-3 gap-10 py-6">
+    <div className="w-full flex justify-center items-center pb-[10%] md:pb-0 mb-0 md:mb-[8%]">
+      <div className="md:w-[80%] p-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center md:h-[200px]">
+          <div className="cryptoDiv text-white">
+            <p className="text-white">N ******</p>
+            <div className="flex">
+              <p className="text-white pr-2">903274983449</p>
+              <MdFileCopy size={20} className="text-white" />
+            </div>
+            <div className="flex gap-4 mt-4">
+              <span className="flex justify-center items-center bg-yellow-400 p-1 rounded-md">
+                <MdArrowUpward className="text-[10px] text-black" />
+                <p className="text-[10px] text-black">Top Up</p>
+              </span>
+              <span className="flex justify-center items-center bg-yellow-400 p-1 rounded-md">
+                <MdArrowUpward className="text-[10px] text-black" />
+                <p className="text-[10px] text-black">Withdraw</p>
+              </span>
+            </div>
+          </div>
+          <div className="cryptoDiv text-white">
+            <p className="text-white">**Crypto**</p>
+            <div className="flex">
+              <p className="text-white pr-2">0a92dheUdU3489Wy</p>
+              <MdFileCopy size={20} className="text-white" />
+            </div>
+            <div className="flex gap-4 mt-4">
+              <span className="flex justify-center items-center bg-yellow-400 p-1 rounded-md">
+                <MdArrowUpward className="text-[10px] text-black" />
+                <p className="text-[10px] text-black">Top Up</p>
+              </span>
+              <span className="flex justify-center items-center bg-yellow-400 p-1 rounded-md">
+                <MdArrowUpward className="text-[10px] text-black" />
+                <p className="text-[10px] text-black">Withdraw</p>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="w-[100%] grid grid-cols-1 md:grid-cols-3 gap-10 py-6 mt-10">
           {income.map((list, i) => (
             <div className="border border-primary p-4 rounded-md" key={i}>
               <div className="flex justify-between items-center pb-4 border-b-primary border border-t-transparent border-r-transparent border-l-transparent">

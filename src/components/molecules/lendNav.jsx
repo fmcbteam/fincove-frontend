@@ -27,7 +27,7 @@ const LendNav = () => {
       <nav className="flex justify-between items-center p-4 shadow-md bg-white z-10">
         <Image src={Logo} alt="logo.png" width={700} height={300} className="w-[120px] h-[70px]"/>
         <h1 className="text-[1.2em] font-semibold">
-          P2P Lending
+        Get Peer2Peer Loan on instant
         </h1>
         <div
           className={`${
