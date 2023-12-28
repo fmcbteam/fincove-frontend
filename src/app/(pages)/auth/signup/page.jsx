@@ -136,9 +136,7 @@ const SignUp = () => {
             <button
               title="Fill the form to enable signup"
               className={`py-2 px-4 w-[100%] rounded-md bg-primary text-white ${
-                isSigningUp
-                  ? "opacity-1 cursor-not-allowed"
-                  : "opacity-100"
+                isSigningUp ? "opacity-1 cursor-not-allowed" : "opacity-100"
               }`}
               onClick={handleSignUp}
               disabled={isSignUpDisabled || isSigningUp} // Disable button when signing up

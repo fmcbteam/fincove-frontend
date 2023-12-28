@@ -37,7 +37,7 @@ const Introduction = () => {
         alt="earth.png"
         width={700}
         height={300}
-        className="lg:w-[500px] lg:h-[700px] absolute top-[20px] right-0 hidden lg:block"
+        className="hidden lg:block"
       />
     </div>
   );

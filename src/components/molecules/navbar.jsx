@@ -56,13 +56,13 @@ const Navbar = () => {
           <div className="flex flex-col md:flex-row gap-10">
             <Link
               href={"/auth/signin"}
-              className="md:flex text-white py-2 px-4 rounded signin"
+              className="md:flex text-white py-2 px-4 rounded signin z-50"
             >
               Sign In
             </Link>
             <Link
               href={"/auth/signup"}
-              className="md:flex text-white py-2 px-4 rounded signup"
+              className="md:flex text-white py-2 px-4 rounded signup z-50"
             >
               Sign Up
             </Link>
